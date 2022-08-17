@@ -43,3 +43,11 @@ const content = `
           `;
 
 document.body.innerHTML = content;
+//
+const arr = [3, 2];
+arr.unshift();
+//
+const colors = ["green", "red", "blue"];
+const colorsJSON = JSON.stringify(colors);
+console.log(colorsJSON);
+//
