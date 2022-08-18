@@ -51,3 +51,34 @@ const colors = ["green", "red", "blue"];
 const colorsJSON = JSON.stringify(colors);
 console.log(colorsJSON);
 //
+const book = { title: "The king", pubYear: 2020, author: "TIMERA" };
+
+const { ...items } = book;
+console.log(items);
+
+const obj = {};
+const obj2 = {
+  id: 1,
+  name: "Huawei headset",
+  price: 250,
+  comments: [
+    {
+      id: 1,
+      author: "Timera",
+      comment: "",
+    },
+    {
+      id: 2,
+      author: "Niuma",
+      comment: "",
+    },
+  ],
+};
+
+console.log(obj2);
+
+const objJSON = JSON.stringify(obj2);
+console.log(objJSON);
+
+const objJS = JSON.parse(objJSON);
+console.log(objJS);
